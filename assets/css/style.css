@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+img {
+    vertical-align: middle;
+}
+:root {
+    --primary_color: #31d7ce;
+    --secondary_color: #4fd18d;
+}
+main{
+    overflow: hidden;
+}
+/* common css end */
+
+/* navigation part start  */
+.nav-part ul li a{
+    color: #000 !important;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.nav-part ul li a:hover{
+    color: #31d7ce !important;
+}
+/* navigation part end  */
+
+/* hero part start  */
+.hero-img{
+    position: relative;
+}
+.hero-head{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: var(--primary_color);
+}
+.hero-head h1{
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+.hero-btn{
+    color: var(--primary_color);
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 10px 40px;
+    font-family: 'Poppins', sans-serif;
+}
+/* hero part end */
+
+/* about part start  */
+.about-part{
+    margin: 100px 0;
+}
+.about-details h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.about-details button{
+    background: #0cac88;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+/* about part end */
+
+/* service part start  */
+.service-part{
+    margin: 100px 0;
+}
+.service-head{
+    margin: 50px;
+    font-weight: 700;
+}
+.service-con img{
+    width: 50px;
+    height: 50px;
+}
+.service-details{
+    margin-left: 20px;
+}
+.service-con h6{
+    color: #444;
+}
+.service-con p{
+    color: #555;
+}
+.service-shadow{
+    padding: 58px 50px;
+    transition: .3s;
+}
+.service-shadow:hover{
+    box-shadow: rgba(49, 215, 206, 0.2) 0px 7px 29px 0px;
+    padding: 58px 50px;
+}
+/* service part end */
+
+/* works part start  */
+.works-con h2{
+    margin: 30px 0;
+}
+.work-img{
+    position: relative;
+    /* overflow: hidden; */
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+.overlay a{
+    color: #fff;
+    font-size: 14px;
+}
+.work-img:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+}
+/* works part end  */
+
+/* portfolio part start  */
+.port-con{
+    position: relative;
+}
+.port-icons{
+    position: absolute;
+    top: 25%;
+    transform: translate(-25%);
+}
+.port-icons h6{
+    padding: 0;
+    margin: 3px;
+    color: #fff;
+}
+.port-icons p{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+.port-icons img{
+    width: 30px;
+    margin-bottom: 3px;
+}
+/* porfolio part end  */
+
+/* blog part start  */
+.blog-con h6{
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-weight: 700;
+}
+.blog-con a{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+/* blog part end */
+
+/* job part start  */
+.job-con{
+    background: var(--secondary_color);
+    padding: 40px 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.job-con button{
+    margin: 0 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    background: #4ae694;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+/* job part end */
+
+/* contact part start  */
+.contact-con-main{
+    background: #000415;
+    padding: 100px 0;
+}
+.verticle-line{
+    border-right: 1px solid #818181;
+}
+.contact-icons i{
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.contact-details ul{
+    margin-bottom: 10px;
+}
+/* contact part end */
+
+/* footer part start  */
+footer{
+    color: #818181;
+    background: #000415;
+    font-size: 14px;
+    padding: 10px 0;
+}
+/* footer part end */
